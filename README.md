@@ -3,7 +3,9 @@
 ---------------------------------------------------
 
 ```
-npm install 
+STEP 1: npm install 
+```
 
-npm start
+```
+STEP 2: npm start
 ```
