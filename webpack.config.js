@@ -13,7 +13,7 @@ var ExtractTextPlugin  = require('extract-text-webpack-plugin');
 module.exports = {
     devtool: 'source-map', // source-map
     entry: {
-        'app'  : [ './application/bootstrap' ],
+        'app'    : [ './application/bootstrap' ],
         'vendor' : [ './application/vendor' ]
     },
     output: {
@@ -58,7 +58,6 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin ({ minimize: true, compress: { warnings: false }, mangle: { keep_fnames: true } }),
         new webpack.optimize.CommonsChunkPlugin({ name: [ 'app', 'vendor'] }),
         new webpack.LoaderOptionsPlugin({ debug: true }),
-        new webpack.ContextReplacementPlugin( /angular(\\|\/)core(\\|\/)@angular/, path.resolve(__dirname, '../application')),
-        new HtmlWebpackPlugin ({ template: 'index.html' })
+        new webpack.ContextReplacementPlugin( /angular(\\|\/)core(\\|\/)@angular/, path.resolve(__dirname, '../application'))
     ]
 };
