@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --inline --watch --progress --host 127.0.0.1 --public 127.0.0.0:8080 --port 8080",
+    "start": "webpack-dev-server --inline --watch --progress --host 127.0.0.1 --port 8080 --public 127.0.0.1:8080",
     "build": "webpack --progress --profile --bail"
   },
   "license": "ISC",
@@ -38,8 +38,8 @@
     "raw-loader": "0.5.1",
     "style-loader": "0.18.2",
     "typescript": "2.4.2",
-    "webpack": "2.5.0",
-    "webpack-dev-server": "2.4.4",
+    "webpack": "2.7.0",
+    "webpack-dev-server": "2.6.1",
     "webpack-sources": "^1.0.1"
   }
 }
